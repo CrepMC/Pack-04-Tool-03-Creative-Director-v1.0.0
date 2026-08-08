@@ -1,0 +1,11 @@
+{
+  "pack_id": "PACK_04_TOOL_03_CREATIVE_DIRECTOR",
+  "name": "Tool 03 — Creative Director",
+  "version": "1.0.0",
+  "released_at": "2026-08-07",
+  "upstream": "T02_PRODUCT_DNA",
+  "downstream": "T04_CAMERA_DIRECTOR",
+  "primary_artifact": "CreativeBrief",
+  "language": "vi-VN",
+  "prompt_count": 3
+}

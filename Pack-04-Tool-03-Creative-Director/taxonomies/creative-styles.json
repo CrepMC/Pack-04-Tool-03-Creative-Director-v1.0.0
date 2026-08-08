@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "styles": [
+    "commercial_clean",
+    "luxury_minimal",
+    "editorial_fashion",
+    "runway_confident",
+    "social_first",
+    "street_style",
+    "lifestyle_natural",
+    "product_demo",
+    "catalog_premium",
+    "soft_feminine",
+    "bold_modern",
+    "classic_elegant",
+    "youthful_trendy",
+    "sporty_dynamic"
+  ],
+  "rule": "Creative style describes intent and tone, not camera, motion, lighting or environment implementation."
+}

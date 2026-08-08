@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreativeConceptCandidateSet",
+  "type": "object",
+  "required": [
+    "artifact_type",
+    "schema_version",
+    "source_product_dna_id",
+    "candidates"
+  ],
+  "properties": {
+    "artifact_type": {
+      "const": "CreativeConceptCandidateSet"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_product_dna_id": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "concept_id",
+          "title",
+          "thesis",
+          "commercial_objective",
+          "creative_style",
+          "brand_tones",
+          "audience_intent",
+          "platform_intent",
+          "strengths",
+          "risks",
+          "scores"
+        ],
+        "properties": {
+          "concept_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "thesis": {
+            "type": "string"
+          },
+          "commercial_objective": {
+            "type": "string"
+          },
+          "creative_style": {
+            "type": "string"
+          },
+          "brand_tones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audience_intent": {
+            "type": "string"
+          },
+          "platform_intent": {
+            "type": "string"
+          },
+          "strengths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "risks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scores": {
+            "type": "object",
+            "required": [
+              "product_fit",
+              "commercial_clarity",
+              "product_readability",
+              "brand_fit",
+              "platform_fit",
+              "differentiation",
+              "production_simplicity",
+              "consistency_risk",
+              "hallucination_risk"
+            ],
+            "properties": {
+              "product_fit": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "commercial_clarity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "product_readability": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "brand_fit": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "platform_fit": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "differentiation": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "production_simplicity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "consistency_risk": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "hallucination_risk": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "generation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

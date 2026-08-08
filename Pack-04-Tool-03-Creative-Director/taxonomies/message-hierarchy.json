@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "message_roles": [
+    "hero_message",
+    "supporting_message",
+    "proof_point",
+    "cta_intent",
+    "avoid_message"
+  ]
+}

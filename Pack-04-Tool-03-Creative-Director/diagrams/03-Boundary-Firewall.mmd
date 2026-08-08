@@ -1,0 +1,9 @@
+flowchart TD
+  C[Creative Concept] --> Q{Contains execution detail?}
+  Q -->|Camera| R[Rewrite to intent]
+  Q -->|Motion| R
+  Q -->|Environment| R
+  Q -->|Cinematic| R
+  Q -->|No| P{Mutates ProductDNA?}
+  P -->|Yes| X[Reject/Rewrite]
+  P -->|No| A[Accept]

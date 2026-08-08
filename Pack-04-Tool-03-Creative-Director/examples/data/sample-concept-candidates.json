@@ -1,0 +1,109 @@
+{
+  "artifact_type": "CreativeConceptCandidateSet",
+  "schema_version": "1.0.0",
+  "source_product_dna_id": "art_pdna_001",
+  "candidates": [
+    {
+      "concept_id": "concept_clean_commercial",
+      "title": "Clean Commercial Fashion Showcase",
+      "thesis": "Keep the blue polka-dot top unmistakably clear while presenting the outfit as polished, wearable and commercially desirable.",
+      "commercial_objective": "affiliate_conversion",
+      "creative_style": "commercial_clean",
+      "brand_tones": [
+        "premium",
+        "approachable",
+        "clean",
+        "confident"
+      ],
+      "audience_intent": "social_discovery",
+      "platform_intent": "short_form_social_commerce",
+      "strengths": [
+        "high product readability",
+        "low consistency risk",
+        "clear commercial purpose"
+      ],
+      "risks": [
+        "could feel generic if execution lacks distinction"
+      ],
+      "scores": {
+        "product_fit": 96,
+        "commercial_clarity": 95,
+        "product_readability": 98,
+        "brand_fit": 88,
+        "platform_fit": 93,
+        "differentiation": 72,
+        "production_simplicity": 94,
+        "consistency_risk": 12,
+        "hallucination_risk": 10
+      }
+    },
+    {
+      "concept_id": "concept_editorial",
+      "title": "Premium Editorial Product Focus",
+      "thesis": "Elevate the outfit with fashion-editorial restraint while keeping the shirt identity dominant.",
+      "commercial_objective": "create_brand_premium_feel",
+      "creative_style": "editorial_fashion",
+      "brand_tones": [
+        "premium",
+        "refined",
+        "fashion_forward"
+      ],
+      "audience_intent": "fashion_interested",
+      "platform_intent": "short_form_brand_content",
+      "strengths": [
+        "premium feel",
+        "strong fashion identity"
+      ],
+      "risks": [
+        "higher risk of product readability loss"
+      ],
+      "scores": {
+        "product_fit": 90,
+        "commercial_clarity": 79,
+        "product_readability": 82,
+        "brand_fit": 93,
+        "platform_fit": 84,
+        "differentiation": 88,
+        "production_simplicity": 76,
+        "consistency_risk": 24,
+        "hallucination_risk": 18
+      }
+    },
+    {
+      "concept_id": "concept_social",
+      "title": "Social-First Product Demo",
+      "thesis": "Prioritize immediate clarity and wearable appeal for short-form commerce.",
+      "commercial_objective": "social_scroll_stop",
+      "creative_style": "social_first",
+      "brand_tones": [
+        "approachable",
+        "clean",
+        "youthful"
+      ],
+      "audience_intent": "affiliate_click_intent",
+      "platform_intent": "short_form_social_commerce",
+      "strengths": [
+        "direct",
+        "high clarity",
+        "conversion-friendly"
+      ],
+      "risks": [
+        "less premium than editorial"
+      ],
+      "scores": {
+        "product_fit": 94,
+        "commercial_clarity": 98,
+        "product_readability": 97,
+        "brand_fit": 82,
+        "platform_fit": 98,
+        "differentiation": 70,
+        "production_simplicity": 96,
+        "consistency_risk": 9,
+        "hallucination_risk": 8
+      }
+    }
+  ],
+  "generation_notes": [
+    "All candidates preserve ProductDNA locks."
+  ]
+}

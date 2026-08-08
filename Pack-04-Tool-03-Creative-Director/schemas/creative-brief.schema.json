@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/creative-brief.schema.json",
+  "title": "CreativeBrief",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "artifact_version",
+    "project_id",
+    "status",
+    "source_product_dna_id",
+    "selected_concept",
+    "product_emphasis",
+    "message_hierarchy",
+    "fashion_commercial_balance",
+    "pacing_intent",
+    "forbidden_mutations",
+    "warnings"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_type": {
+      "const": "CreativeBrief"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "artifact_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "NEEDS_REVIEW",
+        "APPROVED",
+        "LOCKED"
+      ]
+    },
+    "source_product_dna_id": {
+      "type": "string"
+    },
+    "selected_concept": {
+      "$ref": "#/$defs/concept"
+    },
+    "product_emphasis": {
+      "type": "object",
+      "required": [
+        "primary_product_id",
+        "hero_attributes",
+        "supporting_products",
+        "preserved_accessories"
+      ],
+      "properties": {
+        "primary_product_id": {
+          "type": "string"
+        },
+        "hero_attributes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_products": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "preserved_accessories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avoid_overemphasis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "message_hierarchy": {
+      "type": "object",
+      "required": [
+        "hero_message_intent",
+        "supporting_message_intents",
+        "proof_points",
+        "cta_intent",
+        "avoid_claims"
+      ],
+      "properties": {
+        "hero_message_intent": {
+          "type": "string"
+        },
+        "supporting_message_intents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proof_points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cta_intent": {
+          "type": "string"
+        },
+        "avoid_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "fashion_commercial_balance": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "pacing_intent": {
+      "enum": [
+        "slow_premium",
+        "deliberate_commercial",
+        "balanced",
+        "energetic_social",
+        "product_demo_clear"
+      ]
+    },
+    "forbidden_mutations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "concept": {
+      "type": "object",
+      "required": [
+        "concept_id",
+        "title",
+        "thesis",
+        "commercial_objective",
+        "creative_style",
+        "brand_tones",
+        "audience_intent",
+        "platform_intent",
+        "strengths",
+        "risks",
+        "scores"
+      ],
+      "properties": {
+        "concept_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "thesis": {
+          "type": "string"
+        },
+        "commercial_objective": {
+          "type": "string"
+        },
+        "creative_style": {
+          "type": "string"
+        },
+        "brand_tones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "audience_intent": {
+          "type": "string"
+        },
+        "platform_intent": {
+          "type": "string"
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scores": {
+          "type": "object",
+          "required": [
+            "product_fit",
+            "commercial_clarity",
+            "product_readability",
+            "brand_fit",
+            "platform_fit",
+            "differentiation",
+            "production_simplicity",
+            "consistency_risk",
+            "hallucination_risk"
+          ],
+          "properties": {
+            "product_fit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "commercial_clarity": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "product_readability": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "brand_fit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "platform_fit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "differentiation": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "production_simplicity": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "consistency_risk": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "hallucination_risk": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

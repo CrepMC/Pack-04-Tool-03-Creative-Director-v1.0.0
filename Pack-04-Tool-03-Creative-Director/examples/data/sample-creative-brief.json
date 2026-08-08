@@ -1,0 +1,88 @@
+{
+  "artifact_id": "art_creative_001",
+  "artifact_type": "CreativeBrief",
+  "schema_version": "1.0.0",
+  "artifact_version": "1.0.0",
+  "project_id": "project_fashion_ad_001",
+  "status": "LOCKED",
+  "source_product_dna_id": "art_pdna_001",
+  "selected_concept": {
+    "concept_id": "concept_clean_commercial",
+    "title": "Clean Commercial Fashion Showcase",
+    "thesis": "Keep the blue polka-dot top unmistakably clear while presenting the outfit as polished, wearable and commercially desirable.",
+    "commercial_objective": "affiliate_conversion",
+    "creative_style": "commercial_clean",
+    "brand_tones": [
+      "premium",
+      "approachable",
+      "clean",
+      "confident"
+    ],
+    "audience_intent": "social_discovery",
+    "platform_intent": "short_form_social_commerce",
+    "strengths": [
+      "high product readability",
+      "low consistency risk",
+      "clear commercial purpose"
+    ],
+    "risks": [
+      "could feel generic if execution lacks distinction"
+    ],
+    "scores": {
+      "product_fit": 96,
+      "commercial_clarity": 95,
+      "product_readability": 98,
+      "brand_fit": 88,
+      "platform_fit": 93,
+      "differentiation": 72,
+      "production_simplicity": 94,
+      "consistency_risk": 12,
+      "hallucination_risk": 10
+    }
+  },
+  "product_emphasis": {
+    "primary_product_id": "prod_shirt_001",
+    "hero_attributes": [
+      "collarless V-neck",
+      "blue color",
+      "black polka-dot pattern",
+      "upper garment silhouette"
+    ],
+    "supporting_products": [
+      "prod_pants_001"
+    ],
+    "preserved_accessories": [
+      "prod_hat_001"
+    ],
+    "avoid_overemphasis": [
+      "hat",
+      "background styling"
+    ]
+  },
+  "message_hierarchy": {
+    "hero_message_intent": "The upper garment is the unmistakable visual hero.",
+    "supporting_message_intents": [
+      "The full outfit feels polished and easy to wear."
+    ],
+    "proof_points": [
+      "Neckline, pattern and garment silhouette remain clearly readable."
+    ],
+    "cta_intent": "Encourage product consideration and affiliate click-through.",
+    "avoid_claims": [
+      "Do not claim exact fiber composition.",
+      "Do not invent brand or performance claims."
+    ]
+  },
+  "fashion_commercial_balance": 42,
+  "pacing_intent": "deliberate_commercial",
+  "forbidden_mutations": [
+    "Do not add a shirt collar or lapel.",
+    "Do not change the blue polka-dot identity.",
+    "Do not remove confirmed companion items.",
+    "Do not add unreferenced accessories."
+  ],
+  "warnings": [
+    "Execution details must be delegated to downstream directors."
+  ],
+  "created_at": "2026-08-07T05:00:00Z"
+}

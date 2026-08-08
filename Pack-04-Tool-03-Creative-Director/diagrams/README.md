@@ -1,0 +1,3 @@
+# Diagrams
+
+Mermaid `.mmd` files.

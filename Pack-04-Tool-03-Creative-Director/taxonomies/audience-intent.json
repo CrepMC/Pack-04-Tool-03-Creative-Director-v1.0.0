@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "audience_modes": [
+    "broad_consumer",
+    "fashion_interested",
+    "value_seeking",
+    "premium_shopper",
+    "social_discovery",
+    "affiliate_click_intent",
+    "repeat_customer",
+    "gift_shopper",
+    "unknown"
+  ],
+  "rule": "Do not infer sensitive demographics. Use broad commercial intent only unless user explicitly supplies non-sensitive audience context."
+}

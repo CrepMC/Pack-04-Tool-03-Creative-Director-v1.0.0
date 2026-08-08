@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "tones": [
+    "premium",
+    "approachable",
+    "confident",
+    "refined",
+    "playful",
+    "youthful",
+    "elegant",
+    "minimal",
+    "bold",
+    "clean",
+    "natural",
+    "aspirational",
+    "functional",
+    "fashion_forward"
+  ]
+}
