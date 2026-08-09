@@ -9,17 +9,17 @@
 
 ## Prompt statistics
 
-### Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md
+### [`Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md`](./prompts/Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md)
 - Words: 2,311
 - Characters: 16,109
 - SHA-256: `72856a7faf2b9c60bc3c35ed930c112ae1bd37ed5e68268e2a37ce62c0e30ab3`
 
-### Prompt-02-Concept-Generation-Scoring-and-Decision-System.md
+### [`Prompt-02-Concept-Generation-Scoring-and-Decision-System.md`](./prompts/Prompt-02-Concept-Generation-Scoring-and-Decision-System.md)
 - Words: 2,300
 - Characters: 16,249
 - SHA-256: `94c3581c6e3b3ed69e5adc0d41ddabc30268cb18cdb107b58f88e6c615b761ee`
 
-### Prompt-03-Production-Hardening-Handoff-and-Release.md
+### [`Prompt-03-Production-Hardening-Handoff-and-Release.md`](./prompts/Prompt-03-Production-Hardening-Handoff-and-Release.md)
 - Words: 2,090
 - Characters: 14,287
 - SHA-256: `99db450236ae2232c6977d047453f600b8a2d89e94d480397a50b0424be92e76`

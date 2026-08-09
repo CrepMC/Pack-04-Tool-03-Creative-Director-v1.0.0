@@ -32,9 +32,9 @@ Tool này KHÔNG được:
 
 ## Ba prompt chính
 
-- `prompts/Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md`
-- `prompts/Prompt-02-Concept-Generation-Scoring-and-Decision-System.md`
-- `prompts/Prompt-03-Production-Hardening-Handoff-and-Release.md`
+- [`prompts/Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md`](./prompts/Prompt-01-Foundation-UI-Inbound-and-Creative-Framework.md)
+- [`prompts/Prompt-02-Concept-Generation-Scoring-and-Decision-System.md`](./prompts/Prompt-02-Concept-Generation-Scoring-and-Decision-System.md)
+- [`prompts/Prompt-03-Production-Hardening-Handoff-and-Release.md`](./prompts/Prompt-03-Production-Hardening-Handoff-and-Release.md)
 
 Chạy đúng thứ tự 1 → 2 → 3.
 
